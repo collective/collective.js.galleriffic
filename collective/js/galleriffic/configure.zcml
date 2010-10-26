@@ -1,0 +1,28 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="collective.js.galleriffic">
+
+  <browser:resource
+    name="jquery.galleriffic.js"
+    file="jquery.galleriffic.js"
+    />
+  <browser:resource
+    name="jquery.opacityrollover.js"
+    file="jquery.opacityrollover.js"
+    />
+  <browser:resource
+    name="jquery.history.js"
+    file="jquery.history.js"
+    />
+  <genericsetup:registerProfile
+      name="default"
+      title="collective.js.galleriffic default"
+      directory="profiles/default"
+      description='Install collective.js.galleriffic in Plone'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+  />
+
+</configure>
