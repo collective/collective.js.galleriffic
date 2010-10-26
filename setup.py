@@ -28,5 +28,7 @@ setup(name='collective.js.galleriffic',
       ],
       entry_points="""
       # -*- Entry points: -*-
+      [z3c.autoinclude.plugin]
+      target = plone
       """,
       )
