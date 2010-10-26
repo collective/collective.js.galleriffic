@@ -7,7 +7,12 @@ class TestSetup(TestCase):
     """
 
     def test_js_registred(self):
-        pass
+        resources = self.portal.portal_javascripts.getResourcesDict().keys()
+        resource = ('++resource++jquery.galleriffic.js',
+                    '++resource++jquery.opacityrollover.js',
+                    '++resource++jquery.history.js')
+        for r in resource:
+            self.failUnless(r in resources)
 
 def test_suite():
     """
