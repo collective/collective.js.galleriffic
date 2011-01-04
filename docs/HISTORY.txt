@@ -2,10 +2,9 @@ Changelog
 =========
 
 1.0 (unreleased)
-----------------
+------------------
 
-- Nothing changed yet.
-
+- add z3c.autoinclude on plone
 
 1.0b1 (2010-10-26)
 ------------------
