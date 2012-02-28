@@ -6,17 +6,23 @@ version = '1.1dev'
 setup(name='collective.js.galleriffic',
       version=version,
       description="JQuery galleriffic javascript integration as browser resource",
-      long_description=open("README.txt").read() + "\n" +
+      long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
+        "Environment :: Web Environment",
+        "License :: OSI Approved :: GNU General Public License (GPL)",
+        "Operating System :: OS Independent",
+        "Framework :: Plone",
+        "Framework :: Plone :: 4.0",
+        "Framework :: Plone :: 4.1",
         "Programming Language :: Python",
         ],
-      keywords='',
+      keywords='plone javascript galleriffic jquery',
       author='JeanMichel FRANCOIS aka toutpt',
       author_email='toutpt@gmail.com',
-      url='http://svn.plone.org/svn/collective/collective.js.galleriffic',
+      url='https://github.com/collective/collective.js.galleriffic',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['collective', 'collective.js'],

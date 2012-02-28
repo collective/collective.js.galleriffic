@@ -5,6 +5,13 @@ Galleriffic is a jquery plugin. This package is an add-on for Plone.
 It provide galleriffic jquery plugin as a browser resource and it provide
 a generic setup profile that add this plugin inside portal_javascript.
 
+About Galleriffic
+=================
+
+Galleriffic is a jQuery plugin that provides a rich, post-back free experience optimized to handle high volumes of photos while conserving bandwidth. I am not so great at spelling, and it was much later that I realized that the more appropriate spellings would be Gallerific or Gallerrific, but is too late now for a name change, so Galleriffic remains.
+
+Galleriffic can integrate with the JQuery History plugin that already exists in Plone by using the addon collective.jqhistory.
+
 References
 ==========
 
@@ -27,7 +34,7 @@ Authors
 
   - JeanMichel FRANCOIS aka toutpt <toutpt@gmail.com>
 
-Contributors
+.. Contributors
 
 .. |makinacom| image:: http://depot.makina-corpus.org/public/logo.gif
 .. _makinacom:  http://www.makina-corpus.com
