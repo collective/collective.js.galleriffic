@@ -11,12 +11,6 @@ Galleriffic_ is a jQuery plugin that provides a rich, post-back free experience 
 
 Galleriffic can integrate with the JQuery History plugin that already exists in Plone by using the addon collective.jqhistory.
 
-References
-==========
-
-* jquery_
-* galleriffic_
-
 Credits
 =======
 
