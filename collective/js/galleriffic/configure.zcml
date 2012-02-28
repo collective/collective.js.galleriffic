@@ -13,10 +13,6 @@
     name="jquery.opacityrollover.js"
     file="jquery.opacityrollover.js"
     />
-  <browser:resource
-    name="jquery.history.js"
-    file="jquery.history.js"
-    />
   <genericsetup:registerProfile
       name="default"
       title="collective.js.galleriffic default"
