@@ -77,9 +77,13 @@
 		renderSSControls:          true,
 		renderNavControls:         true,
 		playLinkText:              'Play',
+		playLinkTitle:             undefined,
 		pauseLinkText:             'Pause',
+		pauseLinkTitle:            undefined,
 		prevLinkText:              'Previous',
+		prevLinkTitle:             undefined,
 		nextLinkText:              'Next',
+		nextLinkTitle:             undefined,
 		nextPageLinkText:          'Next &rsaquo;',
 		prevPageLinkText:          '&lsaquo; Prev',
 		enableHistory:             false,
@@ -385,7 +389,7 @@
 				if (this.$controlsContainer) {
 					this.$controlsContainer
 						.find('div.ss-controls a').removeClass().addClass('play')
-						.attr('title', this.playLinkText)
+						.attr('title', this.playLinkTitle)
 						.attr('href', '#play')
 						.html(this.playLinkText);
 				}
@@ -400,7 +404,7 @@
 				if (this.$controlsContainer) {
 					this.$controlsContainer
 						.find('div.ss-controls a').removeClass().addClass('pause')
-						.attr('title', this.pauseLinkText)
+						.attr('title', this.pauseLinkTitle)
 						.attr('href', '#pause')
 						.html(this.pauseLinkText);
 				}
@@ -863,6 +867,18 @@
 
 		// Now initialize the gallery
 		$.extend(this, defaults, settings);
+		if (!this.prevLinkTitle) {
+			this.prevLinkTitle = this.prevLinkText;
+		}
+		if (!this.nextLinkTitle) {
+			this.nextLinkTitle = this.nextLinkText;
+		}
+ 		if (!this.playLinkTitle) {
+			this.playLinkTitle = this.playLinkText;
+		}
+ 		if (!this.pauseLinkTitle) {
+			this.pauseLinkTitle = this.pauseLinkText;
+		}
 
 		// Verify the history plugin is available
 		if (this.enableHistory && !$.historyInit)
@@ -910,7 +926,7 @@
 
 			if (this.renderNavControls) {
 				this.$controlsContainer
-					.append('<div class="nav-controls"><a class="prev" rel="history" title="'+this.prevLinkText+'">'+this.prevLinkText+'</a><a class="next" rel="history" title="'+this.nextLinkText+'">'+this.nextLinkText+'</a></div>')
+					.append('<div class="nav-controls"><a class="prev" rel="history" title="'+this.prevLinkTitle+'">'+this.prevLinkText+'</a><a class="next" rel="history" title="'+this.nextLinkTitle+'">'+this.nextLinkText+'</a></div>')
 					.find('div.nav-controls a')
 					.click(function(e) {
 						gallery.clickHandler(e, this);
